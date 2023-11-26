@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+</head>
+<body>
+    <header>
+        <form id="color-picker">
+            <input id="eye-dropper" type="color"/>
+                <select id="select-menu" >
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+            <button id="color-picker-submit" type="submit">Get Color Scheme</button>
+        </form>
+    </header>
+    <div id="color-palette">
+        <div id="color-palette-1" class="color-img"></div>
+        <div id="color-palette-2" class="color-img"></div>
+        <div id="color-palette-3" class="color-img"></div>
+        <div id="color-palette-4" class="color-img"></div>
+        <div id="color-palette-5" class="color-img"></div>
+    </div>
+    <footer>
+        <h3 id="color-1"></h3>
+        <h3 id="color-2"></h3>
+        <h3 id="color-3"></h3>
+        <h3 id="color-4"></h3>
+        <h3 id="color-5"></h3>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
