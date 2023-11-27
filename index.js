@@ -16,7 +16,7 @@ document.getElementById("select-menu").onchange = function() {
 
 document.getElementById('color-picker').addEventListener('submit', (event) => {
     event.preventDefault()
-    fetch(`https://www.thecolorapi.com/scheme?hex=${userColor}&format=json&mode=${colorScheme}&count=5`)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${userColor}&mode=${colorScheme}&count=5`)
         .then(res => res.json())
         .then(data => {
             document.getElementById("color-palette-1").innerHTML = `
